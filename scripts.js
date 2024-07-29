@@ -20,13 +20,13 @@ function turnOn() {
 }
 function turnOff() {
     console.log('hello');
-    loadingScreen.style.display = 'flex';
+    // loadingScreen.style.display = 'flex';
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://script.google.com/macros/s/AKfycbx1ZiwqqLW6afLmRnGfHQqhgYPr3R2Yh063EIO3AtmFOrLL6Vx9Ok5Jc9yChtuxrV3u/exec?cmd=write&&cell=A1&&value=0', true);
     xhr.onload = function () {
         if (xhr.status >= 200 && xhr.status < 300) {
             console.log('Response:', xhr.responseText);
-            loadingScreen.style.display = 'none';
+            // loadingScreen.style.display = 'none';
             document.getElementById('myImage').src = 'assets/stop.jpg';
         } else {
             console.error('Request failed with status:', xhr.status);
