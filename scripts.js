@@ -11,7 +11,7 @@ function turnOn() {
         if (xhr.status >= 200 && xhr.status < 300) {
             console.log('Response:', xhr.responseText);
             loadingScreen.style.display = 'none';
-            document.getElementById('myImage').src = 'assets/started.webp';
+            document.getElementById('myImage').src = 'assets/pump.gif';
         } else {
             console.error('Request failed with status:', xhr.status);
         }
