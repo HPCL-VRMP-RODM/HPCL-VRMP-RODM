@@ -114,7 +114,7 @@ button {
 
 .main-content {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(53 30 30 / 47%);
